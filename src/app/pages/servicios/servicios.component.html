@@ -1,1 +1,61 @@
-<p>servicios works!</p>
+<div class="servicios-container">
+
+
+    <div class="header-container">
+        <div class="cortinilla">
+            <div class="logo animate__animated animate__fadeIn">
+                <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+            </div>
+            <h1 class="animate__animated animate__fadeIn">ASISTENTE PROFESIONAL DE HOSTELERÍA</h1>
+        </div>
+
+    </div>
+
+
+    <div class="como-trabajamos-container">
+        
+        <div class="title">¿Cómo trabajamos?</div>
+
+        <div class="como-trabajamos-item" *ngFor="let item of vServicios">
+            <div class="subtitle">
+                {{ item.title }}
+            </div>
+            <div class="text">
+                {{ item.text }}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nuestros-servicios-container">
+
+        <div class="title">Nuestros servicios</div>
+        <div class="subtitle">Trabajamos para que tu negocio triunfe</div>
+        
+
+        <div class="items-nuestros-servicios">
+
+
+            <div class="item-nuestros-servicios" *ngFor="let item of vNuestrosServicios">
+                <div class="title">
+                    {{ item.title }}
+                </div>
+                
+                <div class="subtitle" *ngIf="item.subtitle">
+                    {{ item.subtitle }}
+                </div>
+
+                <div class="text">
+                    {{ item.text }}
+                </div>
+
+                <div class="ver-mas">
+                    <button [disabled]="item.path === ''"> Ver más </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

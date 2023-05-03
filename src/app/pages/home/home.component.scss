@@ -49,7 +49,7 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        padding: 40px 0px;
+        padding: 80px 0px;
 
         .title h1 {
             font-size: 2.5rem;
@@ -58,7 +58,8 @@
             text-align: center;
             text-shadow: 1px 1px 5px var(--principal-color-40);
             border-bottom: 1px solid var(--principal-color);
-            padding: 8px 20px
+            padding: 8px 20px;
+            margin-bottom: 60px;
         }
 
         .mensajes-container {
@@ -100,7 +101,7 @@
         }
 
         .button-service {
-            margin-top: 30px;
+            margin-top: 80px;
 
             button {
                 padding: 10px 30px;
@@ -137,7 +138,7 @@
             justify-content: center;
             flex-direction: column;
             gap: 20px;
-            padding: 20px 40px;
+            padding: 100px 40px;
             width: calc(50% - 80px);
             box-sizing: border-box;
 
@@ -187,7 +188,7 @@
 
         .map-container {
             width: 50%;
-            height: 550px;
+            height: 710px;
             box-sizing: border-box;
 
             #mapa-container {

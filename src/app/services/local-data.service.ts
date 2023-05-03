@@ -11,7 +11,7 @@ export class LocalDataService {
   getLocalLinks(): LocalLink[] {
     return [
       { name: 'Inicio', path: 'home' },
-      { name: 'Servicios', path: '' },
+      { name: 'Servicios', path: 'servicios' },
       { name: 'Sobre Hasspro', path: '' },
       { name: 'Contacto', path: '' },
     ]

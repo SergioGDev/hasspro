@@ -2,24 +2,39 @@
     width: 100%;
     height: 60px;
 
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 100;
 
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) background-color;
 
+    &.not-in-top {
+        background-color: var(--principal-color-light);
+        transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) background-color;
+        box-shadow: 2px 2px 5px var(--principal-color-light-80);
+        
+        .link-container .link a {
+            color: var(--principal-color);
+            transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) color;
+        }
+    }
+    
     .link-container {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex-direction: row;
-
+        position: fixed;
+        top: 10px;
+        
         .link {
             cursor: pointer;
             padding: 10px 20px;
-
+            
             a {
                 color: var(--principal-color-light);
                 font-size: 1.1em;
@@ -29,7 +44,8 @@
                 border-bottom: 1px solid transparent;
                 padding-bottom: 4px;
                 transition: border-bottom 0.3s linear;
-
+                transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) color;
+                
                 &:hover {
                     border-bottom: 1px solid var(--principal-color-light-80);
                 }
