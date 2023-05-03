@@ -19,6 +19,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConsultoriaFinancieraComponent } from './pages/consultoria-financiera/consultoria-financiera.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeLayoutComponent,
     ServiciosComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ConsultoriaFinancieraComponent
   ],
   imports: [
     BrowserModule,

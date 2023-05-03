@@ -10,6 +10,7 @@ import { LocalDataService } from 'src/app/services/local-data.service';
 export class FooterComponent implements OnInit {
 
   vLinks: LocalLink[] = [];
+  vLinksServicios: LocalLink[] = [];
   vLegalLinks: LocalLink[] = [];
 
   constructor(
@@ -24,6 +25,7 @@ export class FooterComponent implements OnInit {
     // NgOnInit
     this.vLinks = this.localDataService.getLocalLinks();
     this.vLegalLinks = this.localDataService.getLegalLinks();
+    this.vLinksServicios = this.localDataService.getServiciosLinks();
   }
 
 }

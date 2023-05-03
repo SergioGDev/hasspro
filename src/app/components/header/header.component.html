@@ -10,7 +10,8 @@
         (click)="menuMobileOpened = !menuMobileOpened"></div>
 
     <div class="link-mobile-container" [ngClass]="{'link-mobile-menu-opened': menuMobileOpened}">
-        <div class="link-mobile" *ngFor="let localLink of vLocalLinks">
+        <div class="link-mobile" *ngFor="let localLink of vLocalLinks"
+            (click)="menuMobileOpened = false">
             <a [routerLink]="localLink.path">{{localLink.name}}</a>
         </div>
     </div>

@@ -9,6 +9,14 @@
             </div>
         </div>
 
+        <div class="links-list">
+            <div class="link-item" 
+                *ngFor="let itemLink of vLinksServicios" 
+                [routerLink]="itemLink.path">
+                {{ itemLink.name }}
+            </div>
+        </div>
+
         <div class="address">
             <div class="content">
                 <div class="item">

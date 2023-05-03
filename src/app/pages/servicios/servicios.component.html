@@ -1,6 +1,5 @@
 <div class="servicios-container">
 
-
     <div class="header-container">
         <div class="cortinilla">
             <div class="logo animate__animated animate__fadeIn">
@@ -35,6 +34,15 @@
 
         <div class="items-nuestros-servicios">
 
+            <div class="item-nuestros-servicios">
+                <div class="title">
+                    Estudio inicial participativo SIN COMPROMISO
+                </div>
+                
+                <div class="text">
+                    Contáctenos y analizaremos la situación de tu negocio. Te ofrecemos un estudio inicial participativo sin compromiso en el que estudiaremos los diferentes servicios y técnicas que mejor se adapten a tu situación, ayudándote a incorporar nuevas rutinas y formas de trabajo que garanticen el éxito y la durabilidad de tu establecimiento.
+                </div>
+            </div>
 
             <div class="item-nuestros-servicios" *ngFor="let item of vNuestrosServicios">
                 <div class="title">
@@ -50,7 +58,7 @@
                 </div>
 
                 <div class="ver-mas">
-                    <button [disabled]="item.path === ''"> Ver más </button>
+                    <button [routerLink]="item.path"> Ver más </button>
                 </div>
 
             </div>

@@ -1,0 +1,108 @@
+.servicios-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+
+    .header-container {
+
+        background-image: url(../../../assets/fondo-header-home.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+
+        .cortinilla {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #00000080;
+            padding: 80px 0px;
+            box-sizing: border-box;
+
+            .logo img {
+                width: 240px;
+                height: auto;
+            }
+
+            h1 {
+                font-family: 'Cormorant', serif;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--principal-color-light);
+                text-align: center;
+                text-shadow: 1px 1px 5px var(--principal-color-light-40);
+                border-top: 1px solid var(--principal-color-light);
+                border-bottom: 1px solid var(--principal-color-light);
+                padding: 8px 20px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+}
+
+
+/* lg */
+@media screen and (min-width: 1280px) {}
+
+/* md */
+@media screen and (min-width: 960px) and (max-width: 1279px) {}
+
+/* sm */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    .servicios-container {
+        .header-container {
+            .cortinilla {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: #00000080;
+                padding: 140px 0px 80px 0px;
+
+                .logo img {
+                    width: 240px;
+                    height: auto;
+                }
+
+                h1 {
+                    font-size: 1.8rem;
+                    width: calc(100% - 16px);
+                    padding: 8px 20px;
+                }
+            }
+        }
+    }
+}
+
+/* xs */
+@media screen and (max-width: 599px) {
+    .servicios-container {
+        .header-container {
+            .cortinilla {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: #00000080;
+                padding: 140px 0px 80px 0px;
+
+                .logo img {
+                    width: 240px;
+                    height: auto;
+                }
+
+                h1 {
+                    font-size: 1.6rem;
+                    width: calc(100% - 16px);
+                    padding: 8px 20px;
+                }
+            }
+        }
+
+    }
+}

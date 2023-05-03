@@ -53,7 +53,7 @@
         width: calc(100% - 180px);
 
         padding: 50px 50px 100px 50px;
-        margin: 20px 40px;
+        margin: 70px 40px 20px 40px;
         background-color: var(--principal-color-light-80);
         border-radius: 5px;
         box-shadow: 2px 2px 4px var(--principal-color-light);
@@ -139,6 +139,12 @@
                 background-color: var(--principal-color-light-80);
                 border-radius: 5px;
                 box-shadow: 2px 2px 4px var(--principal-color-light);
+
+                &:first-child {
+                    width: 75%;
+                    min-height: 250px;
+                    gap: 40px
+                }
 
                 .title, .subtitle, .text {
                     color: var(--principal-color);
@@ -270,10 +276,19 @@
             width: calc(100% - 40px);
             padding: 50px 10px 100px 10px;
             margin: 20px 10px;
-            
+
+            .title {
+                padding: 0px;
+            }
+
+            .subtitle {
+                padding: 0 0 30px 0;
+            }
+
             .items-nuestros-servicios {
                 .item-nuestros-servicios {
-                    width: 90%;
+                    width: 100% !important;
+                    padding: 40px 10px !important;
                 }
             }
         }

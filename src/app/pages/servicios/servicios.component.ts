@@ -33,24 +33,24 @@ export class ServiciosComponent implements OnInit {
     {
       title: 'A/Gestión de la documentación',
       text: 'Tramitamos toda la documentación necesaria para tu establecimiento. Te asesoramos y realizamos todo tipo de gestiones ajustándolas a los parámetros de tu negocio con el fin de obtener una mayor viabilidad del mismo.',
-      path: ''
+      path: '/servicios/gestion-documentacion'
     },
     {
       title: 'A/Gestión participativa de sala',
       text: 'Ofrecemos una mejora de los servicios y la optimización de los procesos y recursos de los que disponga la empresa. Te asesoramos y adaptamos nuevos métodos de trabajo, gestión, formación del equipo o mejora de los servicios, entre otros.',
-      path: ''
+      path: '/servicios/gestion-participativa-sala'
     },
     {
       title: 'Consultoría financiera',
       subtitle: 'Particulares - Autónomos - PYMES',
       text: 'Lo más importante de un buen asesoramiento es que puedes entender cada paso. Para ello te vamos a explicar hasta el más mínimo detalle de por qué recomendamos una solución financiera específica y en qué medida se adapta esta solución a tus necesidades particulares ',
-      path: ''
+      path: '/servicios/consultoria-financiera'
     },
-    {
-      title: 'Desarrollo de los establecimientos',
-      text: 'Ofrecemos la gestión participativa total de la sala, la participación activa en la dirección del mismo y la gestión de la documentación que generen.',
-      path: ''
-    },
+    // {
+    //   title: 'Desarrollo de los establecimientos',
+    //   text: 'Ofrecemos la gestión participativa total de la sala, la participación activa en la dirección del mismo y la gestión de la documentación que generen.',
+    //   path: '/servicios/desarrollo-establecimientos'
+    // },
   ]
 
   constructor() {

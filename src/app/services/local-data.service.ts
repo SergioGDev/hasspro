@@ -17,6 +17,14 @@ export class LocalDataService {
     ]
   }
 
+  getServiciosLinks(): LocalLink[] {
+    return [
+      { name: 'A/Gestión de la Documentación', path: '/servicios/gestion-documentacion' },
+      { name: 'A/Gestión Participativa de Sala', path: '/servicios/gestion-participativa-sala' },
+      { name: 'Consultoría Financiera', path: '/servicios/consultoria-financiera' }
+    ]
+  }
+
   getLegalLinks(): LocalLink[] {
     return [
       { name: 'Política de privacidad', path: '' },
