@@ -1,0 +1,56 @@
+<div class="footer-container">
+
+    <div class="data-container">
+        <div class="links-list">
+            <div class="link-item" 
+                *ngFor="let itemLink of vLinks" 
+                [routerLink]="itemLink.path">
+                {{ itemLink.name }}
+            </div>
+        </div>
+
+        <div class="address">
+            <div class="content">
+                <div class="item">
+                    <div class="icon">
+                        <img src="../../../assets/icons/location-color-principal.png" />
+                    </div>
+                    <div class="text">
+                        Ronda del Carmen, 13. Cáceres (CP: 10002)
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="../../../assets/icons/email-color-principal.png" />
+                    </div>
+                    <div class="text">
+                        contacto@hasspro.es
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="../../../assets/icons/phone-color-principal.png" />
+                    </div>
+                    <div class="text">
+                        640 90 36 70
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legal-links-list">
+            <div class="link-item" 
+                *ngFor="let itemLink of vLegalLinks" 
+                [routerLink]="itemLink.path">
+                {{ itemLink.name }}
+            </div>
+        </div>
+    </div>
+
+    <div class="developer-container">
+        <div class="text">
+            Hecho con ❤️ por <a href="https://sergiogdev.com/">SergioGDev ©</a>
+        </div>
+    </div>
+
+</div>

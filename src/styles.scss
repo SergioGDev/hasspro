@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --white-color: #ededed;
+
+    --principal-color: #397d9f;
+    --principal-color-20: #397d9f20;
+    --principal-color-40: #397d9f40;
+    --principal-color-80: #397d9f80;
+    
+    --principal-color-light: #e3edf2;
+    --principal-color-light-20: #e3edf220;
+    --principal-color-light-40: #e3edf240;
+    --principal-color-light-80: #e3edf280;
+
+    --principal-color-light-oscuro: #d0e2eb;
+}

@@ -1,0 +1,66 @@
+<div class="home-container">
+
+    <div class="header-container">
+        <div class="cortinilla">
+            <div class="logo">
+                <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+            </div>
+            <h1>ASISTENTE PROFESIONAL DE HOSTELERÍA</h1>
+        </div>
+
+    </div>
+
+    <div class="messages-container">
+
+        <div class="title">
+            <h1>{{ tituloMensajes }}</h1>
+        </div>
+
+        <div class="mensajes-container">
+
+            <div class="item-mensaje" *ngFor="let itemMensaje of vMensajes">
+                <div class="icon">
+                    <img [src]="iconPath + itemMensaje.icon" />
+                </div>
+                <div class="texto">
+                    {{ itemMensaje.text }}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button-service">
+            <button>Encuentra tu servicio</button>
+        </div>
+    </div>
+
+    <div class="direccion-container">
+
+        <div class="nos-conocemos-container">
+            <div class="title">
+                ¿Nos conocemos?
+            </div>
+
+            <div class="subtitle">
+                Queremos escucharte y compartir nuestra experiencia contigo. Puedes encontrarnos en todos estos sitios:
+            </div>
+
+            <div class="contact-list">
+                <div class="item-contacto" *ngFor="let itemContacto of vDondeEncontrarnos">
+                    <div class="icon">
+                        <img [src]="iconPath + itemContacto.icon" />
+                    </div>
+                    <div class="text">
+                        {{ itemContacto.text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <div id="mapa-container"></div>
+        </div>
+    </div>
+    
+
+</div>

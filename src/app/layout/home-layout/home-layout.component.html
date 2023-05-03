@@ -1,0 +1,32 @@
+<div class="layout-container">
+
+    <!-- <div class="toolbar">
+        <div class="link-container">
+            <div class="link" *ngFor="let localLink of vLocalLinks">
+                <a [routerLink]="localLink.path">{{localLink.name}}</a>
+            </div>
+        </div>
+
+        <div class="menu-mobile-button"
+            [ngClass]="{'menu-mobile-button-opened': menuMobileOpened}"
+            (click)="menuMobileOpened = !menuMobileOpened"></div>
+
+        <div class="link-mobile-container" [ngClass]="{'link-mobile-menu-opened': menuMobileOpened}">
+            <div class="link-mobile" *ngFor="let localLink of vLocalLinks">
+                <a [routerLink]="localLink.path">{{localLink.name}}</a>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="header">
+        <app-header></app-header>
+    </div>
+
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="footbar">
+        <app-footer></app-footer>
+    </div>
+</div>

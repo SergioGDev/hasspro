@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hasspro-bb0e4": {
+      "hosting": {
+        "hasspro": [
+          "hasspro"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hasspro-bb0e4"
+  }
+}
