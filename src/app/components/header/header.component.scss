@@ -21,6 +21,11 @@
             color: var(--principal-color);
             transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) color;
         }
+
+        .link-container .link a:hover,
+        .link-container .link a.link-active {
+            border-bottom: 1px solid var(--principal-color-80);
+        }
     }
     
     .link-container {
@@ -46,9 +51,10 @@
                 transition: border-bottom 0.3s linear;
                 transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) color;
                 
-                &:hover {
+                &:hover, &.link-active {
                     border-bottom: 1px solid var(--principal-color-light-80);
                 }
+
             }
         }
     }

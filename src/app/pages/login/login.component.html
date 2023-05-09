@@ -1,0 +1,41 @@
+<div class="login-container">
+
+
+    <div class="form-container">
+
+        <h2>Hasspro - Sección privada</h2>
+        <form [formGroup]="formularioLogin" (submit)="onSubmit()">
+
+            <div class="input-group">
+                <label for="nombre">Email</label>
+                <input type="text" id="email" formControlName="email" />
+                <div class="input-error"
+                    *ngIf="formularioLogin.get('email')?.touched && formularioLogin.get('email')?.errors !== null">
+                    * El email es obligatorio
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="nombre">Password</label>
+                <input type="password" id="password" formControlName="password" />
+                <div class="input-error"
+                    *ngIf="formularioLogin.get('password')?.touched && formularioLogin.get('password')?.errors !== null">
+                    * La contraseña es obligatoria
+                </div>
+            </div>
+
+            <div class="correo-enviado-error" *ngIf="errorLogin">
+                Error: Usuario / contraseña no existentes
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" [disabled]="loging">
+                    {{ loging ? 'Iniciando sesión...' : 'Iniciar sesión' }}
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

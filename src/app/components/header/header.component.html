@@ -1,7 +1,7 @@
 <div class="toolbar" [ngClass]="{'not-in-top': notInTop}">
     <div class="link-container">
         <div class="link" *ngFor="let localLink of vLocalLinks">
-            <a [routerLink]="localLink.path">{{localLink.name}}</a>
+            <a [routerLink]="localLink.path" routerLinkActive="link-active">{{localLink.name}}</a>
         </div>
     </div>
 

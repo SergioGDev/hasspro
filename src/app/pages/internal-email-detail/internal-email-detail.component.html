@@ -1,0 +1,48 @@
+<div class="internal-email-detail-container">
+
+    <mat-toolbar class="toolbar">
+        <div>
+            <button mat-icon-button (click)="goToList()" matTooltip="Volver a la bandeja de entrada">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+            Hasspro - Email de ..
+        </div>
+        <button mat-icon-button (click)="logout()">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <div class="obteniendo-datos" *ngIf="obteniendoDatos">
+        Obteniendo los datos del mensaje...
+    </div>
+
+    <div class="email-detail" *ngIf="datosEmail && !obteniendoDatos">
+
+        <div class="group">
+            <div class="title">Nombre</div>
+            <div class="value">{{ datosEmail.nombre }}</div>
+        </div>
+
+        <div class="group">
+            <div class="title">Email</div>
+            <div class="value">{{ datosEmail.email }}</div>
+        </div>
+
+        <div class="group">
+            <div class="title">Fecha de envío</div>
+            <div class="value">{{ datosEmail!.fecha.toDate()| date:'dd/MM/yyyy HH:mm' }}</div>
+        </div>
+
+        <div class="group">
+            <div class="title">Asunto</div>
+            <div class="value">{{ datosEmail!.asunto }}</div>
+        </div>
+
+        <div class="group">
+            <div class="title">Mensaje</div>
+            <div class="value">{{ datosEmail!.mensaje }}</div>
+        </div>
+
+    </div>
+
+</div>

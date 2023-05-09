@@ -12,8 +12,8 @@ export class LocalDataService {
     return [
       { name: 'Inicio', path: 'home' },
       { name: 'Servicios', path: 'servicios' },
-      { name: 'Sobre Hasspro', path: '' },
-      { name: 'Contacto', path: '' },
+      { name: 'Sobre Hasspro', path: 'sobre-hasspro' },
+      { name: 'Contacto', path: 'contacto' },
     ]
   }
 

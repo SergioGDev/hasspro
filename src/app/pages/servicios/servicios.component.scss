@@ -185,6 +185,40 @@
         }
     }
 
+    .solicita-nuestros-servicios {
+        padding: 50px 0px 100px 0px;
+
+        .texto {
+
+            .title {
+                font-size: 36px;
+                text-align: center;
+                color: var(--principal-color);
+                text-shadow: 1px 1px 2px var(--principal-color-40);
+            }
+        }
+
+        .boton {
+            text-align: center;
+
+            .boton-contacta-con-nosotros {
+                font-size: 20px;
+                color: var(--principal-color);
+                background-color: var(--principal-color-light);
+                border: 1px solid var(--principal-color);
+                border-radius: 10px;
+                padding: 10px 20px;
+                margin-top: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--principal-color);
+                    color: var(--principal-color-light);
+                }
+            }
+        }
+    }
 }
 
 

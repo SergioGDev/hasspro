@@ -1,0 +1,66 @@
+<div class="internal-email-list-container">
+
+    <mat-toolbar class="toolbar">
+        Hasspro - Bandeja de entrada del formulario de contacto
+        <button mat-icon-button (click)="logout()">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <div class="listado-emails">
+
+        <div class="obteniendo-correos" *ngIf="obteniendoCorreos">
+            Obteniendo correos...
+        </div>
+
+        <div class="bandeja-entrada" [hidden]="obteniendoCorreos">
+
+            <div class="mensajes-pendientes" *ngIf="mensajesPendientes > 0">
+                Tienes {{ mensajesPendientes }} mensajes pendientes de lectura.
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="busqueda-tabla" placeholder="Buscar en la bandeja de entrada..."
+                    (keyup)="aplicarFiltro($event)" />
+            </div>
+
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" 
+                matSort (matSortChange)="ordenarTabla($event)">
+                <!-- Nombre Column -->
+                <ng-container matColumnDef="nombre">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header="nombre"> Nombre </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+                </ng-container>
+                
+                <!-- Asunto Column -->
+                <ng-container matColumnDef="asunto">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header="asunto"> Asunto </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.asunto}} </mat-cell>
+                </ng-container>
+                
+                <!-- Fecha Column -->
+                <ng-container matColumnDef="fecha">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header="fecha"> Fecha </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.fecha.toDate() | date:'dd/MM/yyyy HH:mm' }} </mat-cell>
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="abrirMensaje(row)"
+                    class="mat-row"
+                    [ngClass]="{'no-leido': row.estado === 'NO_LEIDO'}"></mat-row>
+
+                <tr class="mat-row-no-mails" *matNoDataRow>
+                    <td colspan="3">No hay coincidencias</td>
+                </tr>
+            </table>
+            <mat-paginator 
+                class="mat-elevation-z8" 
+                [pageSizeOptions]="[25, 50, 100]" 
+                aria-label="Select page"></mat-paginator>
+        </div>
+
+
+    </div>
+
+
+</div>

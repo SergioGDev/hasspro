@@ -58,6 +58,9 @@ export class ServiciosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    window.scroll({ 
+      top: 0, 
+      left: 0
+    });
   }
 }

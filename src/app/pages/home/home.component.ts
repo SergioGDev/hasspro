@@ -54,7 +54,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   zoom: number = 16;
   container: string = 'mapa-container';
 
-
   constructor() { }
 
   ngOnInit(): void {

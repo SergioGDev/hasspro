@@ -213,11 +213,40 @@
                 }
 
                 h1 {
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     width: calc(100% - 16px);
                     padding: 8px 20px;
                 }
             }
+        }
+
+        .servicios-items-container {
+            padding: 100px 5px;
+            width: calc(100% - 10px);
+
+            .title {
+                min-width: 100%;
+                padding: 0px 10px 30px 10px;
+            }
+
+            .subtitle {
+                min-width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .listado-servicios {
+                min-width: 100%;
+            }
+
+            .listado-servicios {
+
+                .item-list {
+                    width: 100%;
+                }
+
+            }
+
         }
     }
 }
