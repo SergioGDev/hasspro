@@ -1,115 +1,134 @@
 <div class="contacto-container">
-
-    <div class="header-container">
-        <div class="cortinilla">
-            <div class="logo animate__animated animate__fadeIn">
-                <img src="../../../assets/logo-hasspro-sin-fondo.png" />
-            </div>
-            <h1 class="animate__animated animate__fadeIn">ASISTENTE PROFESIONAL DE HOSTELERÍA</h1>
-        </div>
-
+  <div class="header-container">
+    <div class="cortinilla">
+      <div class="logo animate__animated animate__fadeIn">
+        <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+      </div>
+      <h1 class="animate__animated animate__fadeIn">
+        ASISTENTE PROFESIONAL DE HOSTELERÍA
+      </h1>
     </div>
+  </div>
 
-
-
-    <div class="contactanos-container">
-        
-        <div class="title">¿Cómo trabajamos?</div>
-
-        <div class="parrafo">
-            Visite nuestra oficina o <b>programe una cita</b>, nos adaptamos a su horario.
-        </div>
-
-        <div class="parrafo">
-            Servicio <b>exclusivo</b> y <b>personalizado</b>.
-        </div>
-
-    </div>
-
-    <div class="formulario-container">
-        <form [formGroup]="formularioContacto" (submit)="onSubmit()">
-
-            <div class="input-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" formControlName="nombre" />
-                <div class="input-error"
-                    *ngIf="formularioContacto.get('nombre')?.touched && formularioContacto.get('nombre')?.errors !== null">
-                    * El nombre es obligatorio
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="nombre">Email</label>
-                <input type="email" id="email" formControlName="email" />
-                <div class="input-error"
-                    *ngIf="formularioContacto.get('email')?.touched && formularioContacto.get('email')?.errors !== null">
-                    * El email es obligatorio y debe tener el formato correcto
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="nombre">Asunto</label>
-                <input type="text" id="asunto" formControlName="asunto" />
-                <div class="input-error"
-                    *ngIf="formularioContacto.get('asunto')?.touched && formularioContacto.get('asunto')?.errors !== null">
-                    * El asunto es obligatorio
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="nombre">Mensaje</label>
-                <textarea id="mensaje" formControlName="mensaje"
-                    ></textarea>
-                <div class="input-error"
-                    *ngIf="formularioContacto.get('mensaje')?.touched && formularioContacto.get('mensaje')?.errors !== null">
-                    * El mensaje es obligatorio
-                </div>
-            </div>
-
-            <div class="submit-container">
-                <button type="submit" [disabled]="enviandoCorreo">
-                    {{ enviandoCorreo ? 'Enviando...' : 'Enviar' }}
-                </button>
-            </div>
-
-            <div class="correo-enviado" *ngIf="correoEnviado">
-                ¡Muchas gracias por contactar con nosotros! Nos pondremos en contacto contigo cuanto antes.
-            </div>
-
-            <div class="correo-enviado-error" *ngIf="errorEnviado">
-                Ha ocurrido un error al enviar el mensaje. Por favor, contacte con nosotros a través de <b>contacto@hasspro.es</b>.
-            </div>
-        </form>
-    </div>
-
-
-    <div class="direccion-container">
-
-        <div class="nos-conocemos-container animate__animated animate__fadeIn animate__delay-1s">
-            <div class="title">
-                ¿Nos conocemos?
-            </div>
-
-            <div class="subtitle">
-                Queremos escucharte y compartir nuestra experiencia contigo. Puedes encontrarnos en todos estos sitios:
-            </div>
-
-            <div class="contact-list">
-                <div class="item-contacto" *ngFor="let itemContacto of vDondeEncontrarnos">
-                    <div class="icon">
-                        <img [src]="iconPath + itemContacto.icon" />
-                    </div>
-                    <div class="text">
-                        {{ itemContacto.text }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="map-container">
-            <div id="mapa-container"></div>
-        </div>
-    </div>
+  <div class="contactanos-container">
+    <div class="title">¿Dónde estamos?</div>
     
+    <div class="parrafo">
+        Visite nuestra oficina o <b>programe una cita</b>, nos adaptamos a su
+        horario.
+    </div>
+    <div class="parrafo">Servicio <b>exclusivo</b> y <b>personalizado</b>.</div>
 
+    <div class="title">Hablemos</div>
+    <div class="parrafo">
+        Estamos cerca, conectados con la realidad de la hostelería. Hablemos de <b>gestión</b>, de <b>operaciones</b>, de <b>las compras</b> y <b>la sala</b>, de <b>la cocina</b>, <b>del equipo</b>... <b>¿Hablamos?</b>
+    </div>
+  </div>
+
+  <div class="formulario-container">
+    <form [formGroup]="formularioContacto" (submit)="onSubmit()">
+      <div class="input-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" formControlName="nombre" />
+        <div
+          class="input-error"
+          *ngIf="
+            formularioContacto.get('nombre')?.touched &&
+            formularioContacto.get('nombre')?.errors !== null
+          "
+        >
+          * El nombre es obligatorio
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="nombre">Email</label>
+        <input type="email" id="email" formControlName="email" />
+        <div
+          class="input-error"
+          *ngIf="
+            formularioContacto.get('email')?.touched &&
+            formularioContacto.get('email')?.errors !== null
+          "
+        >
+          * El email es obligatorio y debe tener el formato correcto
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="nombre">Asunto</label>
+        <input type="text" id="asunto" formControlName="asunto" />
+        <div
+          class="input-error"
+          *ngIf="
+            formularioContacto.get('asunto')?.touched &&
+            formularioContacto.get('asunto')?.errors !== null
+          "
+        >
+          * El asunto es obligatorio
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="nombre">Mensaje</label>
+        <textarea id="mensaje" formControlName="mensaje"></textarea>
+        <div
+          class="input-error"
+          *ngIf="
+            formularioContacto.get('mensaje')?.touched &&
+            formularioContacto.get('mensaje')?.errors !== null
+          "
+        >
+          * El mensaje es obligatorio
+        </div>
+      </div>
+
+      <div class="submit-container">
+        <button type="submit" [disabled]="enviandoCorreo">
+          {{ enviandoCorreo ? "Enviando..." : "Enviar" }}
+        </button>
+      </div>
+
+      <div class="correo-enviado" *ngIf="correoEnviado">
+        ¡Muchas gracias por contactar con nosotros! Nos pondremos en contacto
+        contigo cuanto antes.
+      </div>
+
+      <div class="correo-enviado-error" *ngIf="errorEnviado">
+        Ha ocurrido un error al enviar el mensaje. Por favor, contacte con
+        nosotros a través de <b>contacto@hasspro.es</b>.
+      </div>
+    </form>
+  </div>
+
+  <div class="direccion-container">
+    <div
+      class="nos-conocemos-container animate__animated animate__fadeIn animate__delay-1s"
+    >
+      <div class="title">¿Nos conocemos?</div>
+
+      <div class="subtitle">
+        Queremos escucharte y compartir nuestra experiencia contigo. Puedes
+        encontrarnos en todos estos sitios:
+      </div>
+
+      <div class="contact-list">
+        <div
+          class="item-contacto"
+          *ngFor="let itemContacto of vDondeEncontrarnos"
+        >
+          <div class="icon">
+            <img [src]="iconPath + itemContacto.icon" />
+          </div>
+          <div class="text">
+            {{ itemContacto.text }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <div id="mapa-container"></div>
+    </div>
+  </div>
 </div>

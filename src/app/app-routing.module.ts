@@ -13,6 +13,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { InternalEmailListComponent } from './pages/internal-email-list/internal-email-list.component';
 import { InternalEmailDetailComponent } from './pages/internal-email-detail/internal-email-detail.component';
 import { InternalGuard } from './guards/internal.guard';
+import { AdquisicionEstablecimientosComponent } from './pages/adquisicion-establecimientos/adquisicion-establecimientos.component';
+import { PorQueContratarnosComponent } from './pages/por-que-contratarnos/por-que-contratarnos.component';
 
 const routes: Routes = [
 
@@ -33,9 +35,11 @@ const routes: Routes = [
       { path: 'servicios', component: ServiciosComponent },
       { path: 'contacto', component: ContactComponent },
       { path: 'sobre-hasspro', component: SobreHassproComponent },
+      { path: 'por-que-contratarnos', component: PorQueContratarnosComponent },
       { path: 'servicios/gestion-documentacion', component: GestionDocumentacionComponent },
       { path: 'servicios/gestion-participativa-sala', component: GestionParticipativaSalaComponent },
       { path: 'servicios/consultoria-financiera', component: ConsultoriaFinancieraComponent },
+      { path: 'servicios/adquisicion-establecimientos', component: AdquisicionEstablecimientosComponent },
       { path: 'servicios/desarrollo-establecimientos', component: DesarrolloEstablecimientosComponent },
 
       { path: '**', redirectTo: 'home' },

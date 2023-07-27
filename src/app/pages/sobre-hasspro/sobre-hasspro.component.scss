@@ -59,10 +59,12 @@
         box-shadow: 2px 2px 4px var(--principal-color-light);
 
         .title {
+      max-width: 100%;
+      box-sizing: border-box;
             font-size: 36px;
             color: var(--principal-color);
             text-shadow: 1px 1px 2px var(--principal-color-40);
-            padding: 0px 25% 30px 25%;
+            padding: 0px 10% 30px 10%;
             border-bottom: 1px solid var(--principal-color-80);
         }
 
@@ -90,7 +92,7 @@
 
 /* sm */
 @media screen and (min-width: 600px) and (max-width: 959px) {
-    .servicios-container {
+    .sobre-hasspro-container {
         .header-container {
             .cortinilla {
                 display: flex;
@@ -128,7 +130,7 @@
 
 /* xs */
 @media screen and (max-width: 599px) {
-    .servicios-container {
+    .sobre-hasspro-container {
         .header-container {
             .cortinilla {
                 display: flex;
@@ -157,6 +159,8 @@
             margin: 20px 10px;
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 padding: 0px 10px 30px 10px;
                 text-align: center;
             }

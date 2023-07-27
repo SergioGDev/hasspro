@@ -1,278 +1,278 @@
 .servicios-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
 
+  .header-container {
+    background-image: url(../../../assets/fondo-header-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    .cortinilla {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #00000080;
+      padding: 80px 0px;
+      box-sizing: border-box;
+
+      .logo img {
+        width: 240px;
+        height: auto;
+      }
+
+      h1 {
+        font-family: "Cormorant", serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--principal-color-light);
+        text-align: center;
+        text-shadow: 1px 1px 5px var(--principal-color-light-40);
+        border-top: 1px solid var(--principal-color-light);
+        border-bottom: 1px solid var(--principal-color-light);
+        padding: 8px 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .servicios-items-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     flex-direction: column;
+    padding: 100px 40px;
+    width: calc(100% - 80px);
 
-    .header-container {
+    .title {
+      max-width: 100%;
+      box-sizing: border-box;
+      font-size: 36px;
+      width: 800px;
+      text-align: center;
+      color: var(--principal-color);
+      text-shadow: 1px 1px 2px var(--principal-color-40);
+      padding: 0px 10px 30px 10px;
+    }
 
-        background-image: url(../../../assets/fondo-header-home.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
+    .subtitle {
+      font-size: 30px;
+      min-width: 500px;
+      text-align: center;
+      color: var(--principal-color);
+      text-shadow: 1px 1px 2px var(--principal-color-40);
+      padding: 0px 10% 30px 10%;
+      border-bottom: 1px solid var(--principal-color-80);
+    }
 
-        .cortinilla {
+    .listado-servicios {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 40px;
+
+      .item-list {
+        min-width: 270px;
+        max-width: 330px;
+        width: 27%;
+        background-color: var(--principal-color-light);
+        box-shadow: 1px 2px 4px var(--principal-color-light-40);
+        border-radius: 10px;
+        padding: 30px 20px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-self: flex-start;
+        flex-direction: column;
+        gap: 30px;
+
+        .title-item-list {
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+          gap: 20px;
+
+          .icon {
+            width: 40px;
+            height: 40px;
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .text {
+            font-size: 30px;
+            text-align: center;
+            color: var(--principal-color);
+            text-shadow: 1px 1px 2px var(--principal-color-40);
+          }
+        }
+
+        .content-item-list {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 30px;
+
+          .item-content-item-list {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
-            background-color: #00000080;
-            padding: 80px 0px;
-            box-sizing: border-box;
+            flex-direction: row;
+            gap: 10px;
 
-            .logo img {
-                width: 240px;
-                height: auto;
+            img {
+              width: 20px;
+              height: 20px;
             }
 
-            h1 {
-                font-family: 'Cormorant', serif;
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: var(--principal-color-light);
-                text-align: center;
-                text-shadow: 1px 1px 5px var(--principal-color-light-40);
-                border-top: 1px solid var(--principal-color-light);
-                border-bottom: 1px solid var(--principal-color-light);
-                padding: 8px 20px;
-                box-sizing: border-box;
+            span {
+              font-size: 16px;
             }
+          }
         }
+      }
+    }
+  }
+
+  .solicita-nuestros-servicios {
+    padding: 50px 0px 100px 0px;
+
+    .texto {
+      .title {
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 36px;
+        text-align: center;
+        color: var(--principal-color);
+        text-shadow: 1px 1px 2px var(--principal-color-40);
+      }
     }
 
-    .servicios-items-container {
+    .boton {
+      text-align: center;
+
+      .boton-contacta-con-nosotros {
+        font-size: 20px;
+        color: var(--principal-color);
+        background-color: var(--principal-color-light);
+        border: 1px solid var(--principal-color);
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--principal-color);
+          color: var(--principal-color-light);
+        }
+      }
+    }
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1280px) {
+}
+
+/* md */
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+}
+
+/* sm */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .servicios-container {
+    .header-container {
+      .cortinilla {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 100px 40px;
-        width: calc(100% - 80px);
+        background-color: #00000080;
+        padding: 140px 0px 80px 0px;
 
-        .title {
-            font-size: 36px;
-            min-width: 800px;
-            text-align: center;
-            color: var(--principal-color);
-            text-shadow: 1px 1px 2px var(--principal-color-40);
-            padding: 0px 25% 30px 25%;
+        .logo img {
+          width: 240px;
+          height: auto;
         }
 
-        .subtitle {
-            font-size: 30px;
-            min-width: 500px;
-            text-align: center;
-            color: var(--principal-color);
-            text-shadow: 1px 1px 2px var(--principal-color-40);
-            padding: 0px 25% 30px 25%;
-            border-bottom: 1px solid var(--principal-color-80);
+        h1 {
+          font-size: 1.8rem;
+          width: calc(100% - 16px);
+          padding: 8px 20px;
         }
-
-        .listado-servicios {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 50px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            min-width: 950px;
-            width: 100%;
-            margin-top: 40px;
-
-            .item-list {
-                min-width: 270px;
-                max-width: 330px;
-                width: 27%;
-                background-color: var(--principal-color-light);
-                box-shadow: 1px 2px 4px var(--principal-color-light-40);
-                border-radius: 10px;
-                padding: 30px 20px;
-
-                display: flex;
-                align-items: flex-start;
-                justify-self: flex-start;
-                flex-direction: column;
-                gap: 30px;
-
-                .title-item-list {
-                    width: 100%;
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    flex-direction: row;
-                    gap: 20px;
-
-                    .icon {
-                        width: 40px;
-                        height: 40px;
-
-                        img {
-                            width: 40px;
-                            height: 40px;
-                        }
-                    }
-
-                    .text {
-                        font-size: 30px;
-                        text-align: center;
-                        color: var(--principal-color);
-                        text-shadow: 1px 1px 2px var(--principal-color-40);
-                    }
-                }
-
-                .content-item-list {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    gap: 30px;
-
-                    .item-content-item-list {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: row;
-                        gap: 10px;
-
-                        img {
-                            width: 20px;
-                            height: 20px;
-                        }
-
-                        span {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-
-    .solicita-nuestros-servicios {
-        padding: 50px 0px 100px 0px;
-
-        .texto {
-
-            .title {
-                font-size: 36px;
-                text-align: center;
-                color: var(--principal-color);
-                text-shadow: 1px 1px 2px var(--principal-color-40);
-            }
-        }
-
-        .boton {
-            text-align: center;
-
-            .boton-contacta-con-nosotros {
-                font-size: 20px;
-                color: var(--principal-color);
-                background-color: var(--principal-color-light);
-                border: 1px solid var(--principal-color);
-                border-radius: 10px;
-                padding: 10px 20px;
-                margin-top: 20px;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                    background-color: var(--principal-color);
-                    color: var(--principal-color-light);
-                }
-            }
-        }
-    }
-}
-
-
-/* lg */
-@media screen and (min-width: 1280px) {}
-
-/* md */
-@media screen and (min-width: 960px) and (max-width: 1279px) {}
-
-/* sm */
-@media screen and (min-width: 600px) and (max-width: 959px) {
-    .servicios-container {
-        .header-container {
-            .cortinilla {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                background-color: #00000080;
-                padding: 140px 0px 80px 0px;
-
-                .logo img {
-                    width: 240px;
-                    height: auto;
-                }
-
-                h1 {
-                    font-size: 1.8rem;
-                    width: calc(100% - 16px);
-                    padding: 8px 20px;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* xs */
 @media screen and (max-width: 599px) {
-    .servicios-container {
-        .header-container {
-            .cortinilla {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                background-color: #00000080;
-                padding: 140px 0px 80px 0px;
+  .servicios-container {
+    .header-container {
+      .cortinilla {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #00000080;
+        padding: 140px 0px 80px 0px;
 
-                .logo img {
-                    width: 240px;
-                    height: auto;
-                }
-
-                h1 {
-                    font-size: 1.6rem;
-                    width: calc(100% - 16px);
-                    padding: 8px 20px;
-                }
-            }
+        .logo img {
+          width: 240px;
+          height: auto;
         }
 
-        .servicios-items-container {
-            padding: 100px 5px;
-            width: calc(100% - 10px);
-
-            .title {
-                min-width: 100%;
-                padding: 0px 10px 30px 10px;
-            }
-
-            .subtitle {
-                min-width: 100%;
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            .listado-servicios {
-                min-width: 100%;
-            }
-
-            .listado-servicios {
-
-                .item-list {
-                    width: 100%;
-                }
-
-            }
-
+        h1 {
+          font-size: 1.6rem;
+          width: calc(100% - 16px);
+          padding: 8px 20px;
         }
+      }
     }
+
+    .servicios-items-container {
+      padding: 100px 5px;
+      width: calc(100% - 10px);
+
+      .title {
+        max-width: 100%;
+        box-sizing: border-box;
+        min-width: 100%;
+        padding: 0px 10px 30px 10px;
+      }
+
+      .subtitle {
+        min-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .listado-servicios {
+        min-width: 100%;
+      }
+
+      .listado-servicios {
+        .item-list {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

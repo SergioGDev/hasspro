@@ -52,12 +52,14 @@
         width: calc(100% - 80px);
 
         .title {
+      max-width: 100%;
+      box-sizing: border-box;
             font-size: 36px;
             min-width: 800px;
             text-align: center;
             color: var(--principal-color);
             text-shadow: 1px 1px 2px var(--principal-color-40);
-            padding: 0px 25% 30px 25%;
+            padding: 0px 10% 30px 10%;
         }
 
         .subtitle {
@@ -66,7 +68,7 @@
             text-align: center;
             color: var(--principal-color);
             text-shadow: 1px 1px 2px var(--principal-color-40);
-            padding: 0px 25% 30px 25%;
+            padding: 0px 10% 30px 10%;
             border-bottom: 1px solid var(--principal-color-80);
         }
 
@@ -158,6 +160,8 @@
         .texto {
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 font-size: 36px;
                 text-align: center;
                 color: var(--principal-color);
@@ -225,6 +229,8 @@
             width: calc(100% - 10px);
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 min-width: 100%;
                 padding: 0px 10px 30px 10px;
             }
@@ -281,6 +287,8 @@
             width: calc(100% - 10px);
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 min-width: 100%;
                 padding: 0px 10px 30px 10px;
             }

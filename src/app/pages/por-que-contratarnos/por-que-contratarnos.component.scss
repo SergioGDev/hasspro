@@ -1,0 +1,54 @@
+
+.razon-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+
+    border-bottom: 1px solid var(--principal-color-40);
+    color: var(--principal-color);
+    padding-bottom: 30px;
+
+    .number {
+        width: 100px;
+        font-size: 50px;
+    }
+
+    .razones {
+        max-width: 800px;
+        
+        .title-razon {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .razon div {
+            margin-bottom: 10px;
+
+            b {
+                color: var(--principal-color-bold);
+            }
+        }
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1280px) {
+
+}
+
+/* md */
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+
+}
+
+/* sm */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+
+}
+
+/* xs */
+@media screen and (max-width: 599px) {
+
+}

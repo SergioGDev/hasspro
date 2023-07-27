@@ -2,6 +2,11 @@
     <div class="link-container">
         <div class="link" *ngFor="let localLink of vLocalLinks">
             <a [routerLink]="localLink.path" routerLinkActive="link-active">{{localLink.name}}</a>
+            <div *ngIf="localLink.sublinks !== undefined" class="submenu">
+                <div class="sublink" *ngFor="let sublink of localLink.sublinks">
+                    <a [routerLink]="sublink.path" routerLinkActive="link-active">{{sublink.name}}</a>
+                </div>
+            </div>
         </div>
     </div>
 

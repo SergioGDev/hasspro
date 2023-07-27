@@ -1,0 +1,33 @@
+<div class="servicios-container">
+  <div class="header-container">
+    <div class="cortinilla">
+      <div class="logo animate__animated animate__fadeIn">
+        <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+      </div>
+      <h1 class="animate__animated animate__fadeIn">
+        ASISTENTE PROFESIONAL DE HOSTELERÍA
+      </h1>
+    </div>
+  </div>
+
+  <div class="como-trabajamos-container">
+    <div class="title">¿Por qué contratarnos?</div>
+
+    <div class="razon-container" *ngFor="let razonData of vMensajes; let i = index">
+        <div class="number">
+            {{ (i+1) }}
+        </div>
+        <div class="razones">
+            <div class="title-razon">
+                {{ razonData.title }}
+            </div>
+            <div class="razon" *ngFor="let razon of razonData.parrafos">
+                <div [innerHTML]="razon"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+</div>

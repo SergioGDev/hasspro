@@ -1,0 +1,50 @@
+<div class="servicios-container">
+  <div class="header-container">
+    <div class="cortinilla">
+      <div class="logo animate__animated animate__fadeIn">
+        <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+      </div>
+      <h1 class="animate__animated animate__fadeIn">
+        ASISTENTE PROFESIONAL DE HOSTELERÍA
+      </h1>
+    </div>
+  </div>
+
+  <div class="servicios-items-container">
+    <div class="title">Adquisición de establecimientos</div>
+
+    <div class="listado-servicios">
+      <!-- <div class="card-service" *ngFor="let dataCard of vCardsTop">
+        <div class="subtitle">
+          {{ dataCard.title }}
+        </div>
+        <div class="description" [innerHTML]="dataCard.text"></div>
+      </div> -->
+      <div class="card-service">
+        <div class="subtitle">
+          ¿Cómo trabajamos?
+        </div>
+        <div class="description">
+          Hasspro te proporciona el desarrollo de planes y soluciones adaptadas a las necesidades de cada negocio.
+        </div>
+      </div>
+    </div>
+
+    <div class="descripcion-servicios">
+      <div class="title-descripcion">Ofrecemos:</div>
+      <div class="item" *ngFor="let itemDescripcion of vDescripcion">
+        <div class="contenedor-imagen">
+          <img [src]="pathImg + itemDescripcion.img" />
+        </div>
+        <div class="texto">
+          <div class="subtitulo">
+            {{ itemDescripcion.title }}
+          </div>
+          <div class="descripcion">
+            {{ itemDescripcion.text }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

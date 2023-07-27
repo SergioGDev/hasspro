@@ -31,21 +31,26 @@ export class ServiciosComponent implements OnInit {
 
   vNuestrosServicios: NuestrosServiciosItem[] = [
     {
-      title: 'A/Gestión de la documentación',
+      title: 'Asesoramiento y gestión de la documentación',
       text: 'Tramitamos toda la documentación necesaria para tu establecimiento. Te asesoramos y realizamos todo tipo de gestiones ajustándolas a los parámetros de tu negocio con el fin de obtener una mayor viabilidad del mismo.',
       path: '/servicios/gestion-documentacion'
     },
     {
-      title: 'A/Gestión participativa de sala',
+      title: 'Asesoramiento y gestión participativa de sala',
       text: 'Ofrecemos una mejora de los servicios y la optimización de los procesos y recursos de los que disponga la empresa. Te asesoramos y adaptamos nuevos métodos de trabajo, gestión, formación del equipo o mejora de los servicios, entre otros.',
       path: '/servicios/gestion-participativa-sala'
     },
     {
-      title: 'Consultoría financiera',
-      subtitle: 'Particulares - Autónomos - PYMES',
-      text: 'Lo más importante de un buen asesoramiento es que puedes entender cada paso. Para ello te vamos a explicar hasta el más mínimo detalle de por qué recomendamos una solución financiera específica y en qué medida se adapta esta solución a tus necesidades particulares ',
-      path: '/servicios/consultoria-financiera'
+      title: 'Adquisición de los establecimientos',
+      text: 'Ofrecemos la gestión y adquisición total o parcial de establecimientos o locales dedicados al sector de la hostelería, te contamos como poder delegar aquellas funciones y gestiones que serán necesarias para optimizar al máximo el funcionamiento del establecimiento. Ofrecemos un trato personalizado que se adapte a las necesidades de los diferentes clientes con los que trabajamos.',
+      path: '/servicios/adquisicion-establecimientos'
     },
+    // {
+    //   title: 'Consultoría financiera',
+    //   subtitle: 'Particulares - Autónomos - PYMES',
+    //   text: 'Lo más importante de un buen asesoramiento es que puedes entender cada paso. Para ello te vamos a explicar hasta el más mínimo detalle de por qué recomendamos una solución financiera específica y en qué medida se adapta esta solución a tus necesidades particulares ',
+    //   path: '/servicios/consultoria-financiera'
+    // },
     // {
     //   title: 'Desarrollo de los establecimientos',
     //   text: 'Ofrecemos la gestión participativa total de la sala, la participación activa en la dirección del mismo y la gestión de la documentación que generen.',

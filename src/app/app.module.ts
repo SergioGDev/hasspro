@@ -28,6 +28,8 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material/angular-material/angular-material.module';
+import { AdquisicionEstablecimientosComponent } from './pages/adquisicion-establecimientos/adquisicion-establecimientos.component';
+import { PorQueContratarnosComponent } from './pages/por-que-contratarnos/por-que-contratarnos.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { AngularMaterialModule } from './material/angular-material/angular-mater
     ConsultoriaFinancieraComponent,
     LoginComponent,
     InternalEmailListComponent,
-    InternalEmailDetailComponent
+    InternalEmailDetailComponent,
+    AdquisicionEstablecimientosComponent,
+    PorQueContratarnosComponent
   ],
   imports: [
     BrowserModule,

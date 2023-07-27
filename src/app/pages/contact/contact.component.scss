@@ -50,31 +50,35 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         flex-wrap: wrap;
         width: calc(100% - 180px);
 
-        padding: 50px;
+        padding: 30px 50px 70px 50px;
         margin: 70px 40px;
         background-color: var(--principal-color-light-80);
         border-radius: 5px;
         box-shadow: 2px 2px 4px var(--principal-color-light);
 
         .title {
+      max-width: 100%;
+      box-sizing: border-box;
             font-size: 36px;
+            margin-bottom: 10px;
+            margin-top: 20px;
             color: var(--principal-color);
             text-shadow: 1px 1px 2px var(--principal-color-40);
-            padding: 0px 25% 30px 25%;
+            padding: 0px 50px 15px 50px;
             border-bottom: 1px solid var(--principal-color-80);
         }
 
         .parrafo {
-            font-size: 20px;
+            font-size: 18px;
             color: var(--principal-color);
 
             b {
                 font-weight: 900;
-                text-shadow: 1px 1px 3px var(--principal-color-40);
+                color: var(--principal-color-bold)
             }
         }
     }
@@ -208,6 +212,8 @@
             box-sizing: border-box;
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 font-size: 2.2rem;
                 font-weight: 700;
                 text-align: center;
@@ -310,6 +316,8 @@
             margin: 70px 10px;
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 font-size: 30px;
                 padding: 0px 10px 30px 10px;
                 text-align: center;
@@ -382,6 +390,8 @@
             margin: 70px 10px;
 
             .title {
+      max-width: 100%;
+      box-sizing: border-box;
                 font-size: 30px;
                 padding: 0px 10px 30px 10px;
                 text-align: center;

@@ -17,20 +17,32 @@
         </div>
 
         <div class="mensajes-container animate__animated animate__fadeIn animate__delay-1s">
-
-            <div class="item-mensaje" *ngFor="let itemMensaje of vMensajes">
-                <div class="icon">
-                    <img [src]="iconPath + itemMensaje.icon" />
+            
+            <div class="item-card" *ngFor="let itemCard of vCards">
+                <div>
+                    <img [src]="iconPath + itemCard.icon" />
                 </div>
-                <div class="texto">
-                    {{ itemMensaje.text }}
+                <div>
+                    <h2>{{ itemCard.title }}</h2>
+                    <div *ngFor="let mensaje of itemCard.vMensajes">
+                        {{ mensaje }}
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="button-service animate__animated animate__fadeIn animate__delay-1s">
-            <button>Encuentra tu servicio</button>
+        <div class="encuentra-tu-servicio">
+            <div class="distincion-negocio">
+                <h2>Distinción de su Negocio</h2>
+                <div class="img-container">
+                    <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+                </div>
+                <p>En los establecimientos en los que trabajemos ofrecemos una distinción de <b>Hasspro</b>, para asegurar la calidad del servicio a los potenciales clientes. ¿Quieres saber más? Pues <b>pulsa aquí abajo</b> y...</p>
+            </div>
+            <div class="button-service animate__animated animate__fadeIn animate__delay-1s">
+                <button routerLink="/servicios">Encuentra tu servicio</button>
+            </div>
         </div>
     </div>
 

@@ -3,6 +3,7 @@ import { Timestamp } from "firebase/firestore";
 export interface LocalLink {
     name: string;
     path: string;
+    sublinks?: LocalLink[];
 }
 
 
