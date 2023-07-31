@@ -82,8 +82,9 @@
 
       .item-list {
         min-width: 270px;
-        max-width: 330px;
-        width: 27%;
+        max-width: calc(100% - 40px);
+        width: 400px;
+        height: 265px;
         background-color: var(--principal-color-light);
         box-shadow: 1px 2px 4px var(--principal-color-light-40);
         border-radius: 10px;
@@ -131,10 +132,11 @@
 
           .item-content-item-list {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             flex-direction: row;
             gap: 10px;
+            text-align: start;
 
             img {
               width: 20px;
@@ -144,6 +146,91 @@
             span {
               font-size: 16px;
             }
+          }
+        }
+
+        .content-text {
+          margin: 0px 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .descripcion-servicios {
+    margin-top: 60px;
+    max-width: 100%;
+
+    .title-descripcion {
+      font-size: 36px;
+      width: 100%;
+      text-align: center;
+      color: var(--principal-color);
+      text-shadow: 1px 1px 2px var(--principal-color-40);
+      margin-bottom: 30px;
+    }
+
+    .item {
+      padding: 40px 20px;
+      max-width: 100%;
+      width: 1000px;
+      border-top: 1px solid var(--principal-color-light);
+      box-sizing: border-box;
+
+      &:last-child {
+        border-bottom: 1px solid var(--principal-color-light);
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 50px;
+
+      .contenedor-imagen {
+        width: 180px;
+        height: 180px;
+        max-width: 300px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 10px var(--principal-color-80);
+
+        img {
+          width: 180px;
+          height: 180px;
+          border-radius: 4px;
+        }
+      }
+
+      .texto {
+        flex: 1;
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 14px;
+
+        .subtitulo {
+          font-size: 18px;
+          color: var(--principal-color-bold);
+          margin-bottom: 15px;
+        }
+
+        .item-content-item-list {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          gap: 10px;
+          margin-left: 10px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+
+          span {
+            font-size: 16px;
           }
         }
       }
@@ -219,6 +306,29 @@
         }
       }
     }
+
+
+    .descripcion-servicios {
+      .item {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .contenedor-imagen {
+          width: 100%;
+          height: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .texto {
+          text-align: center;
+        }
+      }
+    }
   }
 }
 
@@ -243,6 +353,29 @@
           font-size: 1.6rem;
           width: calc(100% - 16px);
           padding: 8px 20px;
+        }
+      }
+    }
+
+
+    .descripcion-servicios {
+      .item {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .contenedor-imagen {
+          width: 100%;
+          height: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .texto {
+          text-align: center;
         }
       }
     }

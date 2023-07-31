@@ -15,7 +15,7 @@ export class GestionParticipativaSalaComponent implements OnInit {
   vPersonal: string[] = [ 'Charlas', 'Formación participativa', 'Organización y gestión del equipo' ];
   vServicio: string[] = [ 'Alérgenos', 'Gestión antes y después del servicio', 'Gestión de reservas', 
     'Organización de mesas', 'Tiempos', 'Tipos de comanda', 'Tipos de servicios', 'App' ];
-  vGestionEventos: string[] = [ 'Menús', 'App' ];
+  vGestionEventos: string[] = [ 'Desarrollo del evento', 'Coordinador de eventos', 'Menús', 'App' ];
   
   vDatos: DatosServicios[] = [
     {
