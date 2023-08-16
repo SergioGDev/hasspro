@@ -12,6 +12,7 @@ export interface DatosServicios {
     iconPath: string;
     datos: string[];
     texto?: string;
+    pathImg?: string;
   }
   
 

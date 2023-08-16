@@ -1,65 +1,65 @@
 <div class="servicios-container">
+  <div class="header-container">
+    <div class="cortinilla">
+      <div class="logo animate__animated animate__fadeIn">
+        <img src="../../../assets/logo-hasspro-sin-fondo.png" />
+      </div>
+      <h1 class="animate__animated animate__fadeIn">
+        ASISTENTE PROFESIONAL DE HOSTELERÍA
+      </h1>
+    </div>
+  </div>
 
+  <div class="servicios-items-container">
+    <div class="title">A/Gestión Participativa de Sala</div>
+    <div class="subtitle">Servicios</div>
 
-    <div class="header-container">
-        <div class="cortinilla">
-            <div class="logo animate__animated animate__fadeIn">
-                <img src="../../../assets/logo-hasspro-sin-fondo.png" />
-            </div>
-            <h1 class="animate__animated animate__fadeIn">ASISTENTE PROFESIONAL DE HOSTELERÍA</h1>
-        </div>
-
+    <div class="texto-servicios">
+      Este servicio ofrece rentabilidades superiores al 10%, la mejorar y
+      optimización de los diferentes procesos y funciones de cada
+      establecimiento dan lugar a grandes niveles de rendimientos, que para
+      todos los negocios dedicados al sector de la hostelería es clave para
+      obtener mayor control y mayores beneficios.
     </div>
 
-
-
-    <div class="servicios-items-container">
-        
-        <div class="title">
-            A/Gestión Participativa de Sala
-        </div>
-        <div class="subtitle">
-            Servicios
+    <div class="listado-servicios">
+      <div class="item-list" *ngFor="let item of vDatos">
+        <div class="img-item-list">
+          <img [src]="item.pathImg" />
         </div>
 
-        <div class="listado-servicios">
-            <div class="item-list" *ngFor="let item of vDatos">
-
-                <div class="title-item-list">
-                    <div class="icon">
-                        <img [src]="item.iconPath" />
-                    </div>
-                    <div class="text">
-                        {{ item.titulo }}
-                    </div>
-                </div>
-
-                <div class="content-item-list">
-                    <div class="item-content-item-list" *ngFor="let servicio of item.datos">
-                        <img src="../../../assets/icons/check.png" />
-                        <span>
-                            {{ servicio }}
-                        </span>
-                    </div>
-                </div>
-                
+        <div class="content-item-list">
+          <div class="title-item-list">
+            <div class="text">
+              {{ item.titulo }}
             </div>
+          </div>
+
+          <div
+            class="item-content-item-list"
+            *ngFor="let servicio of item.datos"
+          >
+            <img src="../../../assets/icons/check.png" />
+            <span>
+              {{ servicio }}
+            </span>
+          </div>
         </div>
+
+        <div *ngIf="item.texto" class="texto-item-list">
+          {{ item.texto }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solicita-nuestros-servicios">
+    <div class="texto">
+      <div class="title">¿Quieres solicitar nuestros servicios?</div>
     </div>
 
-    <div class="solicita-nuestros-servicios">
-
-        <div class="texto">
-            <div class="title">
-                ¿Quieres solicitar nuestros servicios?
-            </div>
-        </div>
-
-        <div class="boton">
-            <button class="boton-contacta-con-nosotros">
-                Contacta con nosotros
-            </button>
-
+    <div class="boton">
+      <button class="boton-contacta-con-nosotros">Contacta con nosotros</button>
     </div>
-
+  </div>
 </div>
