@@ -1,32 +1,28 @@
 <div class="layout-container">
+  <div class="header">
+    <app-header (cookiesAccepted)="onClickAceptarCookies()"></app-header>
+  </div>
 
-    <!-- <div class="toolbar">
-        <div class="link-container">
-            <div class="link" *ngFor="let localLink of vLocalLinks">
-                <a [routerLink]="localLink.path">{{localLink.name}}</a>
-            </div>
-        </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 
-        <div class="menu-mobile-button"
-            [ngClass]="{'menu-mobile-button-opened': menuMobileOpened}"
-            (click)="menuMobileOpened = !menuMobileOpened"></div>
+  <div class="footbar">
+    <app-footer (cookiesAccepted)="onClickAceptarCookies()"></app-footer>
+  </div>
 
-        <div class="link-mobile-container" [ngClass]="{'link-mobile-menu-opened': menuMobileOpened}">
-            <div class="link-mobile" *ngFor="let localLink of vLocalLinks">
-                <a [routerLink]="localLink.path">{{localLink.name}}</a>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="header">
-        <app-header></app-header>
+  <div class="cookies-message" *ngIf="googleAnalyticsCookieAccepted === false">
+    <div>
+      🍪 Utilizamos cookies y otras tecnologías de seguimiento para mejorar tu
+      experiencia en nuestro sitio web y para fines analíticos. Al continuar
+      navegando en este sitio, aceptas nuestro uso de cookies. Puedes cambiar
+      tus preferencias de cookies en cualquier momento y obtener más información
+      en nuestra <a routerLink="/politica-cookies" (click)="onClickAceptarCookies()">política de cookies</a> y
+      <a (click)="onClickAceptarCookies()">política de privacidad</a>.
     </div>
-
-    <div class="content">
-        <router-outlet></router-outlet>
+    <div class="cookies-acciones">
+      <button (click)="onClickAceptarCookies()">Aceptar cookies</button>
+      <button>Cancelar</button>
     </div>
-
-    <div class="footbar">
-        <app-footer></app-footer>
-    </div>
+  </div>
 </div>

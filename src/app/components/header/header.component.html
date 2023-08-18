@@ -1,12 +1,12 @@
 <div class="toolbar" [ngClass]="{ 'not-in-top': notInTop }">
   <div class="link-container">
     <div class="link" *ngFor="let localLink of vLocalLinks">
-      <a [routerLink]="localLink.path" routerLinkActive="link-active">{{
+      <a [routerLink]="localLink.path" routerLinkActive="link-active" (click)="onClickAceptarCookies()">{{
         localLink.name
       }}</a>
       <div *ngIf="localLink.sublinks !== undefined" class="submenu">
         <div class="sublink" *ngFor="let sublink of localLink.sublinks">
-          <a [routerLink]="sublink.path" routerLinkActive="link-active">{{
+          <a [routerLink]="sublink.path" routerLinkActive="link-active" (click)="onClickAceptarCookies()">{{
             sublink.name
           }}</a>
         </div>
@@ -29,9 +29,9 @@
       *ngFor="let localLink of vLocalLinks"
       (click)="menuMobileOpened = false"
     >
-      <a [routerLink]="localLink.path">{{ localLink.name }}</a>
+      <a [routerLink]="localLink.path" (click)="onClickAceptarCookies()">{{ localLink.name }}</a>
       <div *ngIf="localLink.sublinks !== undefined" class="submenu-mobile">
-        <div class="sublink-mobile" *ngFor="let sublink of localLink.sublinks">
+        <div class="sublink-mobile" *ngFor="let sublink of localLink.sublinks" (click)="onClickAceptarCookies()">
           <a [routerLink]="sublink.path">{{ sublink.name }}</a>
         </div>
       </div>

@@ -1,0 +1,100 @@
+.container {
+
+  .header-container {
+    background-image: url(../../../assets/fondo-header-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    .cortinilla {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #00000080;
+      padding: 80px 0px;
+      box-sizing: border-box;
+
+      .logo img {
+        width: 240px;
+        height: auto;
+      }
+
+      h1 {
+        font-family: "Cormorant", serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--principal-color-light);
+        text-align: center;
+        text-shadow: 1px 1px 5px var(--principal-color-light-40);
+        border-top: 1px solid var(--principal-color-light);
+        border-bottom: 1px solid var(--principal-color-light);
+        padding: 8px 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .cookies-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 0px;
+    
+      .titulo {
+        width: 1200px;
+        max-width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--principal-color);
+        text-shadow: 1px 1px 5px var(--principal-color-40);
+        padding-bottom: 20px;
+        box-sizing: border-box;
+      }
+    
+      .subtitle {
+        width: 1200px;
+        max-width: 100%;
+        text-align: start;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--principal-color);
+        text-shadow: 1px 1px 5px var(--principal-color-40);
+        padding: 30px 0px 20px 20px;
+        box-sizing: border-box;
+      }
+    
+      .parrafo {
+        width: 1200px;
+        max-width: 100%;
+        text-align: start;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--principal-color-bold);
+        text-shadow: 1px 1px 5px var(--principal-color-40);
+        padding: 20px 40px;
+        box-sizing: border-box;
+
+        a {
+            color: var(--principal-color);
+            cursor: pointer;
+        }
+
+        b {
+            color: black;
+        }
+      }
+  }
+
+}
+
+/* xs */
+@media screen and (max-width: 599px) {
+  .container .cookies-container .subtitle {
+    text-align: center;
+    padding-right: 0;
+  }
+}

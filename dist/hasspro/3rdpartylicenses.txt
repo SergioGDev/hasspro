@@ -178,6 +178,9 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 mapbox-gl
 SEE LICENSE IN LICENSE.txt
 
+ngx-cookie-service
+MIT
+
 rxfire/auth
 
 rxjs

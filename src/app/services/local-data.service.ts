@@ -32,9 +32,7 @@ export class LocalDataService {
 
   getLegalLinks(): LocalLink[] {
     return [
-      { name: 'Política de privacidad', path: '' },
-      { name: 'Términos y condiciones', path: '' },
-      { name: 'Política de cookies', path: '' },
+      { name: 'Política de cookies', path: '/politica-cookies' },
     ]
   }
 }

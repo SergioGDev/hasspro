@@ -30,6 +30,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material/angular-material/angular-material.module';
 import { AdquisicionEstablecimientosComponent } from './pages/adquisicion-establecimientos/adquisicion-establecimientos.component';
 import { PorQueContratarnosComponent } from './pages/por-que-contratarnos/por-que-contratarnos.component';
+import { PoliticaCookiesComponent } from './pages/politica-cookies/politica-cookies.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { PorQueContratarnosComponent } from './pages/por-que-contratarnos/por-qu
     InternalEmailListComponent,
     InternalEmailDetailComponent,
     AdquisicionEstablecimientosComponent,
-    PorQueContratarnosComponent
+    PorQueContratarnosComponent,
+    PoliticaCookiesComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +68,7 @@ import { PorQueContratarnosComponent } from './pages/por-que-contratarnos/por-qu
     NoopAnimationsModule
   ],
   providers: [
+    CookieService,
     ScreenTrackingService,
     UserTrackingService,
     { provide: FIREBASE_OPTIONS, useValue: environment.firebase },

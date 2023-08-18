@@ -2,19 +2,21 @@
 
     <div class="data-container">
         <div class="links-list">
-            <div class="link-item" 
+            <a class="link-item" 
                 *ngFor="let itemLink of vLinks" 
+                (click)="onClickAceptarCookies()"
                 [routerLink]="itemLink.path">
                 {{ itemLink.name }}
-            </div>
+            </a>
         </div>
 
         <div class="links-list">
-            <div class="link-item" 
+            <a class="link-item" 
                 *ngFor="let itemLink of vLinksServicios" 
+                (click)="onClickAceptarCookies()"
                 [routerLink]="itemLink.path">
                 {{ itemLink.name }}
-            </div>
+            </a>
         </div>
 
         <div class="address">
